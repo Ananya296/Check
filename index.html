@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Face recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+       <link rel="stylesheet" href="style.css">
+      
+      </head>
+      <body>
+        <div class="container">
+    
+          <center>
+            <h3 class="head">Face Recognition </h3>
+      
+            <br><br>
+      
+            <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      
+            <button class="btn b"> Mom </button>
+            <button class="btn b"> Dad </button>
+            <button class="btn b"> Sister </button>
+            <button class="btn b"> Me </button>
+            <br>
+            <br>
+            <br>
+      
+            <label id="text">Webcam View - </label>
+            <div id="camera"></div>
+            
+            <br><br>
+      
+            <div id="captured_image"> </div>
+      
+            <br><br>
+      
+            <button onclick="take_snapshot()" id="capture" class="btn" >Capture Image</button>
+      
+            <br><br>
+            <button onclick="check()" id="classify" class="btn" >Indentify Image</button>
+            <br>
+            <br>
+
+          <p style="font-size: 22px;">Person : 
+            <span id="result_person_name"></span> 
+          </p>
+      <p style="font-size: 22px;">Accuracy : 
+        <span id="span_person_accuracy"></span>  
+        </p>
+
+        <script src="main.js"></script>
+          </body>
+</html>

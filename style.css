@@ -1,0 +1,44 @@
+body
+{
+    background-image:linear-gradient( greenyellow, yellow);
+    text-align: center;
+}
+
+.b
+{
+    width: 80%;
+    height: 35px;
+    margin-top: 20px;
+    border-style: none;
+    background-color: lightyellow;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+.head
+{
+    font-family: 'Glory', sans-serif;
+    font-weight: 600px;
+    font-size: 75px;
+}
+
+#camera
+{
+    border: 2px groove;
+    height: 300px;
+    width: 300px;
+}
+
+#text
+{
+    font-size: 18px;
+}
+
+#classify, #capture
+{
+    background-color: lawngreen;
+    height: 45px;
+    width: 195px;
+    font-size: 19px;
+}
+
